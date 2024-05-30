@@ -7,3 +7,11 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 @import "~bootstrap/scss/bootstrap.scss";
+
+.zoom {
+    transition: transform .5s;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); 
+  }
