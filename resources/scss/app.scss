@@ -8,10 +8,31 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 
-.zoom {
-    transition: transform .5s;
+.ldg-text-black{
+    color: $black;
+}
+
+#admin{
+  height: 100vh;
+  overflow: hidden;
+  display:flex;
+
+  #sidebar{
+     background-color: $blue;
+     color: $black;
   }
-  
-  .zoom:hover {
-    transform: scale(1.2); 
-  }
+
+  #wrapper{
+       flex-grow: 1;
+
+
+       header{
+           min-height:70px;
+
+           .img-profile {
+               height:2rem;
+               width:2rem;
+           }
+       }
+   }
+}
