@@ -40,6 +40,8 @@ class ProjectController extends Controller
             $form_data['image'] = $img_path;
         }
         $newPost = Project::create($form_data);
+        // dd($form_data);
+        // dd($newPost);
         return redirect()->route('admin.projects.show', $newPost->slug);
     }
 
